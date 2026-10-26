@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-body: "Urbanist", sans-serif;
+    --color-light: #F8E7D4;
+    --color-dark: #342717;
+    --color-line: #F2F2F2;
+    --text-title: clamp(2.5rem, 5vw + 1rem, 6rem);
+    --text-title--line-height: normal;
+    --text-btn: 1.2rem;
+    --text-btn--line-height: normal;
+}
+
+.logos-slide {
+    animation: slide 10s linear infinite;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
